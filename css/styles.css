@@ -326,17 +326,22 @@ Hero Media Query
 @media only screen and (max-width: 567px) {
   .center .right img.img1 {
     width: 30rem;
+    top: 25rem;
+    right: -10rem;
+  
   }
 
   .center .right img.img2 {
     width: 35rem;
+    top: 25rem;
+  
   
   }
 
   .hero,
   .hero .glide__slides {
     margin: 0;
-    padding: 0 3rem;
+    padding: 0 2.5rem  ;
   }
 
   .hero .left h1 {
@@ -625,7 +630,7 @@ Hero Media Query
 
 .banner {
   position: relative;
-  background-color: var(--grey2);
+  background-color: var(--blue);
   padding: 14rem;
 }
 
@@ -642,6 +647,7 @@ Hero Media Query
   font-size: 2rem;
   font-weight: 300;
   margin-bottom: 1.5rem;
+  color: var(--white);
 }
 
 
@@ -649,11 +655,13 @@ Hero Media Query
   font-size: 5.4rem;
   color: var(--black);
   margin-bottom: 1.5rem;
+  color: var(--white);
 }
 
 .banner .btn {
   display: inline-block;
   margin-top: 2rem;
+  background-color: var(--red);
 }
 
 @media only screen and (max-width: 1200px) {
@@ -692,6 +700,9 @@ Hero Media Query
     display: grid;
     grid-template-columns: 1fr;
     height: 80vh;
+    background-image:url(/images/capellada-nosotros.png);
+    background-repeat: no-repeat;
+    height:100%;
   }
 
   .banner .left {
@@ -704,10 +715,8 @@ Hero Media Query
   }
 
   .banner .right img {
-    right: 10rem;
-    width: 35rem;
-    left: 70%;
-    transform: translateX(-50%);
+   display: none;
+   
   }
   
 }
@@ -715,12 +724,17 @@ Hero Media Query
 @media only screen and (max-width: 567px) {
   .banner {
     padding: 8rem 5rem;
+    background-image:url(/images/capellada-nosotros.png);
+    background-repeat: no-repeat;
+    height: 100%;
+
   }
 
   .banner .trend,
   .banner p {
     font-size: 1.3rem;
     margin-bottom: 1rem;
+    color: var(--white);
   }
 
   .banner h1 {
@@ -735,6 +749,7 @@ Hero Media Query
 
   .banner .right img {
     width: 20rem;
+    display: none;
   }
 }
 
